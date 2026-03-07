@@ -1,0 +1,4 @@
+data/*
+state/*
+!data/.gitkeep
+!state/.gitkeep
