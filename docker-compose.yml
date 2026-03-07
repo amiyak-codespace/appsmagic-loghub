@@ -10,6 +10,7 @@ services:
       - ./fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf:ro
       - ./parsers-appsmagic.conf:/fluent-bit/etc/parsers-appsmagic.conf:ro
       - ${MAGIC_EVENT_LOG_PATH:-/home/ubuntu/Ws/magic-event-manager/api/logs}:/logs/magic-event:ro
+      - ${AUTH_SERVICE_LOG_PATH:-/home/ubuntu/Ws/auth-service/logs}:/logs/auth-service:ro
       - ./data:/centralized
       - ./state:/fluent-bit/state
     networks:
