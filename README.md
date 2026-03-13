@@ -2,6 +2,9 @@
 
 Centralized logging service for AppsMagic microservices.
 
+## Status (2026-03-13)
+- Deployed on EC2 54.83.110.141; no new changes logged this week.
+
 ## What this does
 - Runs Fluent Bit in a standalone container/repo
 - Tails MagicEvent API logs from host path
